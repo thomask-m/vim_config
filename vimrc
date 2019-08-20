@@ -28,3 +28,8 @@ nnoremap <c-e> :Ex<CR>
 set number
 " Highlight cursor
 set cursorline
+
+" tabbing
+set tabstop=2
+set shiftwidth=2
+set expandtab
