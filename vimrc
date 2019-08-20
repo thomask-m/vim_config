@@ -24,3 +24,7 @@ colorscheme gruvbox
 nnoremap <c-p> :GFiles<CR>
 nnoremap <c-b> :buffers<CR>:b<Space>
 nnoremap <c-e> :Ex<CR>
+" Show line numbers
+set number
+" Highlight cursor
+set cursorline
