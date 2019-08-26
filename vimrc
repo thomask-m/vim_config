@@ -22,8 +22,13 @@ set termguicolors
 colorscheme gruvbox
 " Remap <CTRL>-p to find files using FZF
 nnoremap <c-p> :GFiles<CR>
+" View buffers and choose one. Escape to exit.
 nnoremap <c-b> :buffers<CR>:b<Space>
+" File structure explorer
 nnoremap <c-e> :Ex<CR>
+" Set/unset line numbers
+nnoremap <c-n> :set nu!<CR>
+
 " Show line numbers
 set number
 " Highlight cursor
