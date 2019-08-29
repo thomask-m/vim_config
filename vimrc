@@ -20,6 +20,8 @@ let g:lightline = {
 " Unified color scheme (default: dark)
 set termguicolors
 colorscheme gruvbox
+" Setting dark mode
+set background=dark
 " Remap <CTRL>-p to find files using FZF
 nnoremap <c-p> :GFiles<CR>
 " View buffers and choose one. Escape to exit.
