@@ -18,7 +18,12 @@ let g:lightline = {
       \ 'colorscheme': 'seoul256',
       \ }
 " Unified color scheme (default: dark)
-set termguicolors
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname == "Darwin"
+    set termguicolors
+  endif
+endif
 colorscheme gruvbox
 " Setting dark mode
 set background=dark
