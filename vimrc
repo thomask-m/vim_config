@@ -8,6 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'leafgarland/typescript-vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -18,12 +19,12 @@ let g:lightline = {
       \ 'colorscheme': 'seoul256',
       \ }
 " Unified color scheme (default: dark)
-if has("unix")
-  let s:uname = system("uname -s")
-  if s:uname == "Darwin"
-    set termguicolors
-  endif
-endif
+" if has("unix")
+"   let s:uname = system("uname -s")
+"   if s:uname == "Darwin"
+"     set termguicolors
+"   endif
+" endif
 colorscheme gruvbox
 " Setting dark mode
 set background=dark
