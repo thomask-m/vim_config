@@ -10,6 +10,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'maxmellon/vim-jsx-pretty'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
