@@ -4,6 +4,8 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -38,8 +40,6 @@ nnoremap <c-b> :buffers<CR>:b<Space>
 nnoremap <c-e> :Ex<CR>
 " Set/unset line numbers
 nnoremap <c-n> :set nu!<CR>
-" Delete trailing whitespace
-nnoremap <c-w> :%s/\s\+$//e<CR>
 " Show line numbers
 set number
 " Highlight cursor
