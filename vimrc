@@ -22,26 +22,17 @@ call plug#end()
 let g:lightline = {
       \ 'colorscheme': 'seoul256',
       \ }
-" Unified color scheme (default: dark)
-" if has("unix")
-"   let s:uname = system("uname -s")
-"   if s:uname == "Darwin"
-"     set termguicolors
-"   endif
-" endif
 colorscheme gruvbox
 " Setting dark mode
 set background=dark
 " Remap <CTRL>-p to find files using FZF
 nnoremap <c-p> :GFiles<CR>
-" View buffers and choose one. Escape to exit.
-nnoremap <c-b> :buffers<CR>:b<Space>
 " File structure explorer
 nnoremap <c-e> :Ex<CR>
-" Set/unset line numbers
-nnoremap <c-n> :set nu!<CR>
-" Show line numbers
-set number
+" Set/unset relative line numbers
+nnoremap <c-n> :set nu! rnu! <CR>
+" Show hybrid line number/relative numbers
+set number relativenumber
 " Highlight cursor
 set cursorline
 
