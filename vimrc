@@ -3,16 +3,17 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'itchyny/lightline.vim'
-Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'morhetz/gruvbox'
+Plug 'ocaml/vim-ocaml'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -29,6 +30,7 @@ set background=dark
 nnoremap <c-p> :GFiles<CR>
 " File structure explorer
 nnoremap <c-e> :Ex<CR>
+nnoremap <c-s-e> :Rex<CR>
 " Set/unset relative line numbers
 nnoremap <c-n> :set nu! rnu! <CR>
 " Show hybrid line number/relative numbers
