@@ -30,7 +30,6 @@ set background=dark
 nnoremap <c-p> :GFiles<CR>
 " File structure explorer
 nnoremap <c-e> :Ex<CR>
-nnoremap <c-s-e> :Rex<CR>
 " Set/unset relative line numbers
 nnoremap <c-n> :set nu! rnu! <CR>
 " Show hybrid line number/relative numbers
