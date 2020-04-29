@@ -26,6 +26,8 @@ let g:lightline = {
 colorscheme gruvbox
 " Setting dark mode
 set background=dark
+" Map F8 key to compile contest code
+map <F8> :w <CR> :!g++ -std=c++17 % -o main && ./main <CR>
 " Remap <CTRL>-p to find files using FZF
 nnoremap <c-p> :GFiles<CR>
 " File structure explorer
